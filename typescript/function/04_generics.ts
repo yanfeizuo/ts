@@ -12,10 +12,10 @@
     console.log(arr);
 
     //多个泛型参数
-    function getMsg<K, V>(value1: K, value2: V): [K, V] {
-        return [value1, value2];
+    function getMsg<K, V, D>(value1: K, value2: V, value3: D): [K, V, D] {
+        return [value1, value2, value3];
     }
 
-    const arr1 = getMsg<string, number>('jack', 100.3);
+    const arr1 = getMsg<string, number, boolean>('jack', 100.3, true);
     console.log(arr1);
 })();
